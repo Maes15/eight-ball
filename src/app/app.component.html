@@ -6,9 +6,11 @@
          placeholder="articulo"
          [(ngModel)]="currentQuestion">
   <button type="submit">Apuntar!</button>
+    <input (click)="eliminar()" type="reset" value="Borrar lista">
 
 </form>
-<div *ngFor="let response of responses; ">
 
-    <div class="newTarea">{{response.tarea}}</div>
-</div>
+    <div class="newTarea" *ngFor="let response of responses; ">
+
+        <div>{{response.tarea}}</div>
+    </div>

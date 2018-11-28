@@ -24,5 +24,7 @@ export class AppComponent {
         } else {
             console.error('pregunta que no preguntas');
         }
-  }
+
+    }
+
 }

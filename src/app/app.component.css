@@ -1,6 +1,25 @@
-.input{
+h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.Input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 25px;
+}
+.Input input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .newTarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
 
 }
