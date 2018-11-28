@@ -1,13 +1,12 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
-import { InputComponent } from './input.component';
 
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css']
 })
-export class InputComponent  {
+export class InputComponent {
 
     @Output() nuevaTarea = new EventEmitter<string>();
     currentQuestion = '';

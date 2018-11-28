@@ -22,9 +22,13 @@ export class AppComponent {
             this.responses.unshift(nuevaTarea)
             this.currentQuestion = '';
         } else {
-            console.error('pregunta que no preguntas');
+            alert('Tienes que introducir un articulo');
         }
 
     }
+    borrarTarea(index) {
+        this.responses.splice(index,1);
+    }
+
 
 }

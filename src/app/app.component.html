@@ -10,7 +10,7 @@
 
 <!--</form>-->
 <app-input  (nuevaTarea)="newQuestion($event)"></app-input>
-<app-output class="output" [responses]="responses"></app-output>
+<app-output class="output" [responses]="responses" (borrarTarea)="borrarTarea($event)"></app-output>
 
     <!--<div class="newTarea" *ngFor="let response of responses">-->
 
