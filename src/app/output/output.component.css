@@ -1,7 +1,7 @@
-body{
+.newTarea{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: cornflowerblue;
-    color: black;
+    padding: 5px;
+
 }

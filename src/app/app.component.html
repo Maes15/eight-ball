@@ -1,16 +1,19 @@
 
 <h2>Lista de la compra</h2>
-<form  class="Input" (submit)="newQuestion()">
-  <input type="text"
-         name="tarea"
-         placeholder="articulo"
-         [(ngModel)]="currentQuestion">
-  <button type="submit">Apuntar!</button>
-    <input (click)="eliminar()" type="reset" value="Borrar lista">
+<!--<form  class="Input" (submit)="newQuestion()">-->
+  <!--<input type="text"-->
+         <!--name="tarea"-->
+         <!--placeholder="articulo"-->
+         <!--[(ngModel)]="currentQuestion">-->
+  <!--<button type="submit">Apuntar!</button>-->
+    <!--<input (click)="eliminar()" type="reset" value="Borrar lista">-->
 
-</form>
+<!--</form>-->
+<app-input  (nuevaTarea)="newQuestion($event)"></app-input>
+<app-output class="output" [responses]="responses"></app-output>
 
-    <div class="newTarea" *ngFor="let response of responses; ">
+    <!--<div class="newTarea" *ngFor="let response of responses">-->
 
-        <div>{{response.tarea}}</div>
-    </div>
+        <!--<div>{{response.tarea}}</div>-->
+
+    <!--</div>-->

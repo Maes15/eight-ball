@@ -1,12 +1,12 @@
-h2{
+.Input{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: darkred;
+
+    padding: 25px;
 }
-
-.output{
+.Input input{
     display: flex;
-
+    flex-direction: row;
     justify-content: center;
 }
