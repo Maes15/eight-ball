@@ -9,7 +9,7 @@ import { Response } from '../models/response';
 export class AppComponent {
   currentQuestion = '';
 
-   responses: Array<Response> = [];
+   responses: Array<Response> = JSON.parse(localStorage.getItem("response")) || [];
     private tarea: string;
     newQuestion(tarea) {
         const currentQuestion = tarea.trim();
@@ -19,7 +19,8 @@ export class AppComponent {
                 tarea: currentQuestion,
                 newTarea: this.tarea
             };
-            this.responses.unshift(nuevaTarea)
+            this.responses.unshift(nuevaTarea);
+            localStorage.setItem("response", JSON.stringify(this.responses));
             this.currentQuestion = '';
         } else {
             alert('Tienes que introducir un articulo');

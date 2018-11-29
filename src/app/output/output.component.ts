@@ -14,7 +14,8 @@ export class OutputComponent implements OnInit {
   ngOnInit() {
   }
   eliminar(index) {
-      this.borrarTarea.emit(index)
+      this.borrarTarea.emit(index);
+      localStorage.setItem('response', JSON.stringify(this.responses));
   }
 
 }
