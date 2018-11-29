@@ -1,10 +1,13 @@
-<div class="newTarea">
+<div class="responses">
 
-  <div *ngFor="let response of responses; let i = index;">
+  <div *ngFor="let response of responses; let i = index;"
+       class="{{i === 0 ? 'last': ''}}  record {{response.newTarea.type}}">
 
-    <div class="tareas">
-        {{response.tarea}}  <input (click)="eliminar(i)" type="reset" value="x">
-    </div>
+
+
+      <div class="question"> {{response.question}} </div>
+      <div class="newTarea">{{response.newTarea.text}}  <input (click)="eliminar(i)" type="reset" value="x"></div>
+
 
 
   </div>

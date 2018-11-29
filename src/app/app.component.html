@@ -1,5 +1,6 @@
 
-<h2>Lista de la compra</h2>
+<h2>Bola mágica</h2>
+
 <!--<form  class="Input" (submit)="newQuestion()">-->
   <!--<input type="text"-->
          <!--name="tarea"-->
@@ -9,8 +10,15 @@
     <!--<input (click)="eliminar()" type="reset" value="Borrar lista">-->
 
 <!--</form>-->
+
 <app-input  (nuevaTarea)="newQuestion($event)"></app-input>
-<app-output class="output" [responses]="responses" (borrarTarea)="borrarTarea($event)"></app-output>
+<div class="Input">
+    <button (click)="elimina()" type="reset">Elimina</button>
+</div>
+<div class="output">
+    <app-lista-compra  [data]="responses[0]"></app-lista-compra>
+    <app-output  [responses]="responses" (borrarTarea)="borrarTarea($event)"></app-output>
+</div>
 
     <!--<div class="newTarea" *ngFor="let response of responses">-->
 

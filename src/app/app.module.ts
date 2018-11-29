@@ -7,12 +7,14 @@ import { FormsModule } from '@angular/forms';
 import { OutputComponent } from './output/output.component';
 import { InputComponent } from './input/input.component';
 import { LoggerService } from './logger.service';
+import { ListaCompraComponent } from './lista-compra/lista-compra.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OutputComponent,
-    InputComponent
+    InputComponent,
+    ListaCompraComponent
   ],
   imports: [
     BrowserModule,

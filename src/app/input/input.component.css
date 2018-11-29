@@ -1,12 +1,34 @@
-.Input{
+.Input {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-
-    padding: 25px;
+    flex-wrap: wrap
 }
-.Input input{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+.Input * {
+    margin: .5em
+}
+
+.Input :focus {
+    outline: 5px auto #fff !important
+}
+
+.Input input {
+    background: transparent;
+    font-size: 1.4em;
+    text-align: center;
+    width: 70vw;
+    outline: 5px auto #639
+}
+
+.Input button,
+.Input input {
+    border: none;
+    color: #fff;
+    padding: .5em
+}
+
+.Input button {
+    font-size: 1.2em;
+    background: #639
 }

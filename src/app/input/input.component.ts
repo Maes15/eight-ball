@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, Input } from '@angular/core';
 
 
 @Component({
@@ -9,11 +9,14 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class InputComponent {
 
     @Output() nuevaTarea = new EventEmitter<string>();
+    @Input() eliminaNewTarea = new EventEmitter<string>();
     currentQuestion = '';
+
 
     submit() {
         console.log(this.currentQuestion);
         this.nuevaTarea.emit(this.currentQuestion);
         this.currentQuestion = '';
     }
-}
+
+};
