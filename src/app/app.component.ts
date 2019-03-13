@@ -39,7 +39,7 @@ export class AppComponent {
         if (currentQuestion !== '') {
             const randomIndex = Math.floor(Math.random() * this.newTarea.length);
 
-            const nuevaTarea : { question: any; newTarea: { type: string; text: string } } = {
+            const nuevaTarea : '{ question: any; newTarea: { type: string; text: string } }' = {
                 question: currentQuestion,
                 newTarea: this.newTarea[randomIndex]
             };
